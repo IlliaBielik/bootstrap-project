@@ -11,21 +11,79 @@
 
 <body>
 
-  <div class="container">
-    <div class="row">
-      <div class="col header"><span>HEADER</span></div>
+  <div class="header bg-dark mb-3 pt-3">
+    <div class="container">
+      <div class="row">
+        <h1 class="col text-center text-white mb-3"><span>BEST CHOISE</span></h1>
+      </div>
     </div>
 
-    <div class="row">
-      <div class="col-xxl-6 col-xl-8 main"><span>MAIN</span></div>
-      <div class="col-xxl-3 col-xl-4 col-lg-6 order-xl-first left"><span>LEFT</span></div>
-      <div class="col-xxl-3 col-xl-12 col-lg-6 right"><span>RIGHT</span></div>
-    </div>
+    <nav class="navbar navbar-expand-lg bg-warning">
+      <div class="container">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Dropdown
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled">Disabled</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <article class="container mb-3">
 
     <div class="row">
-      <div class="col footer"><span>FOOTER</span></div>
-    </div>
+      <main class="col-xxl-6 col-xl-8 main bg-info">
+        <span>MAIN</span>
+      </main>
 
+      <aside class="col-xxl-3 col-xl-4 col-lg-6 order-xl-first left bg-primary">
+        <span>LEFT</span>
+      </aside>
+
+      <aside class="col-xxl-3 col-xl-12 col-lg-6 right bg-primary">
+        <span>RIGHT</span>
+      </aside>
+    </div>
+  </article>
+
+  <div class="footer bg-dark text-light py-lg-3 py-2">
+    <div class="container">
+      <div class="row">
+        <div class="col">@Illia Bielik</div>
+        <div class="col text-end">Bootstrap v.5</div>
+      </div>
+    </div>
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
