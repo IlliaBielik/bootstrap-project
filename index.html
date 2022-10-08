@@ -6,55 +6,110 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Bootstrap Project</title>
   <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
 
-  <div class="header bg-dark mb-3 pt-3">
+  <div class="header bg-info mb-3 pt-3">
     <div class="container">
       <div class="row">
-        <h1 class="col text-center text-white mb-3"><span>BEST CHOISE</span></h1>
+        <h1 class="col text-center text-dark mb-3"><span>Let's see the World</span></h1>
       </div>
     </div>
 
     <nav class="navbar navbar-expand-lg bg-warning">
       <div class="container">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <a class="navbar-brand" href="#">
+          <img class="logo-image" src="assets/img/logo-site.png" alt="">
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-primary"
+          aria-controls="navbar-primary" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+        <div class="collapse navbar-collapse" id="navbar-primary">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link active" aria-current="page" href="#"><i class="bi bi-house-fill"></i></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
+              <a class="nav-link" href="#">Отзывы</a>
             </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                 aria-expanded="false">
-                Dropdown
+                Туры
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Канада</a></li>
+                <li><a class="dropdown-item" href="#">Египет</a></li>
+                <li><a class="dropdown-item" href="#">Турция</a></li>
+                <li><a class="dropdown-item" href="#">Исландия</a></li>
+                <li><a class="dropdown-item" href="#">Кирп</a></li>
                 <li>
                   <hr class="dropdown-divider">
                 </li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                <li><a class="dropdown-item" href="#">Украинские города</a></li>
               </ul>
             </li>
-            <li class="nav-item">
-              <a class="nav-link disabled">Disabled</a>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Проживание
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Квартира</a></li>
+                <li><a class="dropdown-item" href="#">Отель</a></li>
+                <li><a class="dropdown-item" href="#">Коттедж</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Типы отдыха
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Горнолыжные туры</a></li>
+                <li><a class="dropdown-item" href="#">Экскурсионные туры</a></li>
+                <li><a class="dropdown-item" href="#">Лечение и оздоровление</a></li>
+              </ul>
             </li>
           </ul>
-          <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
-          </form>
+
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Где купить?</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Турагенствам</a>
+            </li>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Укр
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Русс</a></li>
+                <li><a class="dropdown-item" href="#">Укр</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Ваш город
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Киев</a></li>
+                <li><a class="dropdown-item" href="#">Одесса</a></li>
+                <li><a class="dropdown-item" href="#">Харьков</a></li>
+                <li><a class="dropdown-item" href="#">Кривой Рог</a></li>
+                <li><a class="dropdown-item" href="#">Львов</a></li>
+              </ul>
+          </ul>
         </div>
       </div>
     </nav>
