@@ -115,18 +115,41 @@
     </nav>
   </div>
 
-  <article class="container mb-3">
+  <article class="container">
 
     <div class="row">
-      <main class="col-xxl-6 col-xl-8 main bg-info">
-        <span>MAIN</span>
+      <main class="col-xxl-6 col-xl-8 main bg-info mb-3">
+
+        <h2>Пример формы</h2>
+
+        <form action="">
+          <div class="mb-3">
+            <label class="form-label" for="login">Логин</label>
+            <input class="form-control" id="login" type="text" placeholder="Логин">
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label" for="password">Пароль</label>
+            <input class="form-control" id="password" type="text" placeholder="Пароль">
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label" for="email">E-mail</label>
+            <input class="form-control" id="email" type="text" placeholder="E-mail">
+          </div>
+
+          <button class="btn btn-success">Регистрация</button>
+
+
+        </form>
+
       </main>
 
-      <aside class="col-xxl-3 col-xl-4 col-lg-6 order-xl-first left bg-primary">
+      <aside class="col-xxl-3 col-xl-4 col-lg-6 order-xl-first left bg-primary mb-3">
         <span>LEFT</span>
       </aside>
 
-      <aside class="col-xxl-3 col-xl-12 col-lg-6 right bg-primary">
+      <aside class="col-xxl-3 col-xl-12 col-lg-6 right bg-primary mb-3">
         <span>RIGHT</span>
       </aside>
     </div>
