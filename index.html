@@ -118,9 +118,74 @@
   <article class="container">
 
     <div class="row">
-      <main class="col-xxl-6 col-xl-8 main bg-info mb-3">
+      <main class="col-xxl-6 col-xl-8 main bg-info mb-3 px-0 rounded-2 border border-2 border-dark">
 
-        <h2>Анкета для заполнения заявки</h2>
+        <div id="slider-primary" class="carousel slide" data-bs-ride="false">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#slider-primary" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#slider-primary" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#slider-primary" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#slider-primary" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#slider-primary" data-bs-slide-to="4" aria-label="Slide 5"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="assets/img/carousel-first.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Возьми свою мечту</h5>
+                <p>Сегодня — на диване, а завтра — на пляже!</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="assets/img/carousel-second.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Возьми свою мечту</h5>
+                <p>Дома хорошо, а в отпуске лучше!</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="assets/img/carousel-third.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Возьми свою мечту</h5>
+                <p>Начните покорять мир с нами!</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="assets/img/carousel-four.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Возьми свою мечту</h5>
+                <p>Направление выбирать вам!</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="assets/img/carousel-five.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Возьми свою мечту</h5>
+                <p>От вас — только заявление на отпуск!</p>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#slider-primary" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#slider-primary" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+      </main>
+
+      <aside
+        class="col-xxl-3 col-xl-4 col-lg-6 order-xl-first left bg-primary mb-3 rounded-2 border border-2 border-dark">
+
+      </aside>
+
+      <aside class="col-xxl-3 col-xl-12 col-lg-6 right bg-primary mb-3 rounded-2 border border-2 border-dark">
+
+        <h2 class="mb-3 text-center text-light">Анкета</h2>
 
         <form action="">
           <div class="mb-3">
@@ -181,14 +246,6 @@
 
         </form>
 
-      </main>
-
-      <aside class="col-xxl-3 col-xl-4 col-lg-6 order-xl-first left bg-primary mb-3">
-        <span>LEFT</span>
-      </aside>
-
-      <aside class="col-xxl-3 col-xl-12 col-lg-6 right bg-primary mb-3">
-        <span>RIGHT</span>
       </aside>
     </div>
   </article>
