@@ -1,12 +1,10 @@
 <!doctype html>
-<html lang="en">
+<html lang="zxx">
 
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Bootstrap Project</title>
-  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
@@ -86,7 +84,6 @@
             <li class="nav-item">
               <a class="nav-link text-danger" href="#questionary">Забронировать</a>
             </li>
-            </li>
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                 aria-expanded="false">
@@ -118,7 +115,7 @@
   <article class="container">
 
     <div class="row">
-      <main class="main col-xxl-5 col-xl-7 bg-warning mb-3 px-0 rounded-2 border border-2 border-dark">
+      <div class="main col-xxl-5 col-xl-7 bg-warning mb-3 px-0 border border-2 border-dark">
 
         <div id="slider-primary" class="carousel slide" data-bs-ride="false">
           <div class="carousel-indicators">
@@ -131,7 +128,7 @@
           </div>
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <img src="assets/img/carousel-first.jpg" class="d-block w-100 h-50" alt="...">
+              <img src="assets/img/carousel-first.jpg" class="d-block w-100" alt="...">
               <div class="carousel-caption d-none d-md-block">
                 <h5>Возьми свою мечту</h5>
                 <p>Сегодня — на диване, а завтра — на пляже!</p>
@@ -175,8 +172,7 @@
             <span class="visually-hidden">Next</span>
           </button>
         </div>
-
-      </main>
+      </div>
 
       <aside
         class="left col-xxl-4 col-xl-5 col-lg-6 order-xl-first bg-warning mb-3 rounded-2 border border-2 border-dark">
@@ -283,14 +279,13 @@
             </div>
           </div>
         </div>
-
       </aside>
 
       <aside class="right col-xxl-3 col-xl-12 col-lg-6 bg-dark text-light mb-3 rounded-2 border border-2 border-dark">
 
         <h2 class="mb-3 text-center text-light">Анкета</h2>
 
-        <form action="" id="questionary">
+        <form action="#" id="questionary">
           <div class="mb-3">
             <label class="form-label" for="name">ФИО:</label>
             <input class="form-control" id="name" type="text" placeholder="ФИО">

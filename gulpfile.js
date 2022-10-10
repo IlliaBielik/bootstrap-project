@@ -40,7 +40,7 @@ function scss() {
   return src(PATH.scssRoot)
     .pipe(sass({outputStyle: 'expanded'}).on('error', sass.logError))
     .pipe(postcss(PLUGINS))
-    .pipe(csscomb())
+    // .pipe(csscomb())
     .pipe(dest(PATH.cssFolder))
     .pipe(browserSync.stream());
 }
