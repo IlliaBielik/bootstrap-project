@@ -31,7 +31,7 @@
         <div class="collapse navbar-collapse" id="navbar-primary">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#"><i class="bi bi-house-fill"></i></a>
+              <a class="nav-link active" aria-current="page" href="#">Главная</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Отзывы</a>
@@ -115,7 +115,8 @@
   <article class="container">
 
     <div class="row">
-      <div class="main col-xxl-5 col-xl-7 mb-3 px-2">
+
+      <div class="main col-xxl-5 col-xl-7 mb-3">
 
         <div id="slider-primary" class="carousel slide" data-bs-ride="false">
           <div class="carousel-indicators">
@@ -174,12 +175,11 @@
         </div>
       </div>
 
-      <aside
-        class="left col-xxl-4 col-xl-5 col-lg-6 order-xl-first bg-warning mb-3 rounded-2 border border-2 border-dark">
+      <aside class="left col-xxl-4 col-xl-5 col-lg-6 order-xl-first bg-white mb-3">
 
-        <h3 class="text-center">Путишествие на автомобиле. Что взять в дорогу?</h3>
+        <h3 class="text-center bg-warning rounded-2 pb-2">Путишествие на автомобиле. Что взять в дорогу?</h3>
 
-        <div class="accordion" id="accordionExample">
+        <div class="accordion rounded-2 border border-2 border-dark p-2" id="accordionExample">
           <div class="accordion-item">
             <h2 class="accordion-header" id="headingOne">
               <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
@@ -281,70 +281,69 @@
         </div>
       </aside>
 
-      <aside class="right col-xxl-3 col-xl-12 col-lg-6 bg-dark text-light mb-3 rounded-2 border border-2 border-dark">
+      <aside class="right col-xxl-3 col-xl-12 col-lg-6 text-light">
+        <div class="bg-dark mb-3 rounded-2 border border-2 border-dark px-2">
+          <h2 class="mb-3 text-center text-light">Анкета</h2>
+          <form action="#" id="questionary">
+            <div class="mb-3">
+              <label class="form-label" for="name">ФИО:</label>
+              <input class="form-control" id="name" type="text" placeholder="ФИО">
+            </div>
 
-        <h2 class="mb-3 text-center text-light">Анкета</h2>
+            <div class="mb-3">
+              <label class="form-label" for="email">E-mail:</label>
+              <input class="form-control" id="email" type="text" placeholder="E-mail">
+            </div>
 
-        <form action="#" id="questionary">
-          <div class="mb-3">
-            <label class="form-label" for="name">ФИО:</label>
-            <input class="form-control" id="name" type="text" placeholder="ФИО">
-          </div>
+            <div class="mb-3">
+              <label class="form-label" for="tel">Номер телефона:</label>
+              <input class="form-control" id="tel" type="tel" value="+380">
+            </div>
 
-          <div class="mb-3">
-            <label class="form-label" for="email">E-mail:</label>
-            <input class="form-control" id="email" type="text" placeholder="E-mail">
-          </div>
+            <div class="mb-3">
+              <label class="form-label" for="trip">Сколько дней тур:</label>
+              <input class="form-control" id="trip" type="text" placeholder="Укажите цифрой">
+            </div>
 
-          <div class="mb-3">
-            <label class="form-label" for="tel">Номер телефона:</label>
-            <input class="form-control" id="tel" type="tel" value="+380">
-          </div>
+            <div class="mb-3">
+              <label class="form-label" for="person">Количество человек:</label>
+              <select class="form-select" name="person" id="person" aria-label="Default select example">
+                <option selected>Выбрать из списка</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 и более</option>
+              </select>
+            </div>
 
-          <div class="mb-3">
-            <label class="form-label" for="trip">Сколько дней тур:</label>
-            <input class="form-control" id="trip" type="text" placeholder="Укажите цифрой">
-          </div>
+            <div class="form-check form-switch mb-3">
+              <label class="form-check-label" for="animals">Животные</label>
+              <input class="form-check-input" name="animals" type="checkbox" role="switch" id="animals">
+            </div>
 
-          <div class="mb-3">
-            <label class="form-label" for="person">Количество человек:</label>
-            <select class="form-select" name="person" id="person" aria-label="Default select example">
-              <option selected>Выбрать из списка</option>
-              <option value="1">1</option>
-              <option value="2">2</option>
-              <option value="3">3</option>
-              <option value="4">4</option>
-              <option value="5">5 и более</option>
-            </select>
-          </div>
+            <div class="mb-3">
+              <label class="form-label" for="location">Откуда выезжаем:</label>
+              <select class="form-select" name="location" id="location" aria-label="Default select example">
+                <option selected>Выбрать из списка</option>
+                <option value="1">Киев</option>
+                <option value="2">Харьков</option>
+                <option value="3">Львов</option>
+                <option value="4">Кривой Рог</option>
+                <option value="5">Одесса</option>
+              </select>
+            </div>
 
-          <div class="form-check form-switch mb-3">
-            <label class="form-check-label" for="animals">Животные</label>
-            <input class="form-check-input" name="animals" type="checkbox" role="switch" id="animals">
-          </div>
+            <div class="mb-3">
+              <label class="form-label" for="textarea">Задайте свой вопрос</label>
+              <textarea class="form-control" id="textarea" rows="3" placeholder="Укажите Ваши пожелания"></textarea>
+            </div>
 
-          <div class="mb-3">
-            <label class="form-label" for="location">Откуда выезжаем:</label>
-            <select class="form-select" name="location" id="location" aria-label="Default select example">
-              <option selected>Выбрать из списка</option>
-              <option value="1">Киев</option>
-              <option value="2">Харьков</option>
-              <option value="3">Львов</option>
-              <option value="4">Кривой Рог</option>
-              <option value="5">Одесса</option>
-            </select>
-          </div>
-
-          <div class="mb-3">
-            <label class="form-label" for="textarea">Задайте свой вопрос</label>
-            <textarea class="form-control" id="textarea" rows="3" placeholder="Укажите Ваши пожелания"></textarea>
-          </div>
-
-          <div class="d-grid gap-2">
-            <button class="btn btn-success mb-3">Отправить анкету</button>
-          </div>
-
-        </form>
+            <div class="d-grid gap-2">
+              <button class="btn btn-success mb-3">Отправить анкету</button>
+            </div>
+          </form>
+        </div>
       </aside>
     </div>
   </article>
